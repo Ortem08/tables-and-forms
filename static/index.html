@@ -9,7 +9,92 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST">
+        <p>
+            Тип животного:
+            <label>
+                <input type="radio" name="petType" value="cat" checked>
+                Кот
+            </label>
+            <label>
+                <input type="radio" name="petType" value="dog">
+                Собака
+            </label>
+            <label>
+                <input type="radio" name="petType" value="tiger">
+                Тигр
+            </label>
+        </p>
+
+        <p>
+            Пол:
+            <label>
+                <input type="radio" name="gender" value="none" checked>
+                Без разницы
+            </label>
+            <label>
+                <input type="radio" name="gender" value="girl">
+                Женский
+            </label>
+            <label>
+                <input type="radio" name="gender" value="boy">
+                Мужской
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Цвет глаз:
+                <input type="color" name="eyeColor">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Длина хвоста:
+                <input type="number" name="tailLength" min="7" max="120" value="7">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Кличка:
+                <input type="text" name="name" value="Бублик">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Дата рождения:
+                <input type="date" name="dateOfBirth" value="2018-07-22">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Email:
+                <input type="email" name="email" value="example@exmaple.com">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Телефон:
+                <input type="tel" name="phone" value="+78001000133">
+            </label>
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" name="rules" value="true" checked required>
+                Согласен
+            </label>
+        </p>
+
+        <div>
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
 
 </main>
 </body>
